@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Style Clone</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style2.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo-wrapper">
+            <a href="/en/index.html" class="header-logo-link">
+                <img class="header-logo" src="./download.svg" alt="BMW Logo" width="80">
+            </a>
+            <div class="header-slogan">
+                <p>Суцільне Задоволення від <strong>Водіння</strong></p>
+            </div>
+        </div>
+        <nav class="header-nav">
+            <ul class="header-menu">
+                <li><a href="/index2.html" class="header-menu-link">Головна</a></li>
+                <li><a href="https://www.bmw.com/en/circular-world.html" class="header-menu-link">Навкруг світу</a></li>
+                <li><a href="https://www.bmw.com/en/digital-journey.html" class="header-menu-link">Цифорова подорож</a></li>
+                <li><a href="https://www.bmw.com/en/electric-future.html" class="header-menu-link">Майбутнє за електрикою</a></li>
+                <li><a href="https://www.bmw.com/en/freude.html" class="header-menu-link">Радість</a></li>
+                <li><a href="/model.html" class="header-menu-link">Моделі</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container-contact">
+        <h2>ОТРИМАТИ КОНСУЛЬТАЦІЮ</h2>
+        <p>Залиште свою контактну інформацію, і дилер BMW зв'яжеться з Вами.</p>
+        
+        <form>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <label for="name">Ім'я:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="grid-item">
+                    <label for="surname">Прізвище:</label>
+                    <input type="text" id="surname" name="surname" required>
+                </div>
+                <div class="grid-item">
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+380" maxlength="13" required>
+                </div>
+                <div class="grid-item">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="grid-item">
+                    <label for="dealer">Оберіть дилера:</label>
+                    <select id="dealer" name="dealer">
+                        <option value="vinnytsia">Вінниця - Баварія Центр</option>
+                        <!-- Додай інші дилерські центри, якщо потрібно -->
+                    </select>
+                </div>
+                <div class="grid-item"></div> <!-- Порожнє місце для вирівнювання сітки -->
+                
+                <div class="checkbox">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <label for="consent">Я надаю АВТ Баварія Україна дозвіл на обробку моїх персональних даних...</label>
+                </div>
+
+                <button type="submit">Надіслати</button>
+            </div>
+        </form>
+</body>
+</html>

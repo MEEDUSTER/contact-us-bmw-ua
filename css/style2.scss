@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.container-contact {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 70%;
+    max-width: 900px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.container-contact p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    text-align: left;
+}
+
+.grid-item label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.grid-item input,
+.grid-item select,
+.grid-item button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9rem;
+    grid-column: span 2;
+    color: black;
+}
+
+.checkbox input {
+    margin-right: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    grid-column: span 2;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
